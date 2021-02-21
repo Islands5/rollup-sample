@@ -1,10 +1,5 @@
-window.addEventListener('DOMContentLoaded', () => {
-  const hoge = () => {
-    console.log('hoge')
-  }
-  hoge()
-
-  const ary = (new Array(10)).fill(false)
-  console.log(ary)
-});
-
+import { Application } from 'stimulus';
+import controllers from 'stimulus-controllers';
+ 
+const application = Application.start();
+application.load(controllers);
